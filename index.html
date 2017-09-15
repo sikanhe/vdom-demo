@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vdom Demo</title>
+    <style>
+      *{
+        box-sizing: border-box
+      }
+      .listContainer {
+        vertical-align: top;
+        display: inline-block;
+        width: 40%;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0
+      }
+
+      ul li {
+        padding: 0
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="listContainer">
+      <h2> List 1 (without `key`) </h2>
+      <div id="list1"></div>
+      <h2> Ops: </h2>
+      <div id="ops1"></div>
+    </div>
+
+    <div class="listContainer">
+      <h2> List 2 (with `key`) </h2>
+      <div id="list2"></div>
+      <h2> Ops: </h2>
+      <div id="ops2"></div>
+    </div>
+
+    <script src="bundle.js" type="text/javascript"></script>
+  </body>
+
+</html>
